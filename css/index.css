@@ -1,0 +1,64 @@
+/* all articles */
+.nieuws, .artikel, .informatie {
+    background-color: rgba(255, 204, 137, 0.90);
+    box-sizing: border-box;
+    float: left;
+    border: solid;
+}
+
+/* nieuwsfeed */
+.nieuws {
+    width: 65%;
+    margin-right: 4%;
+}
+
+/* nieuwsartikel */
+.artikel {
+    width: 30%;
+}
+
+/* contactgegevens */
+.informatie {
+    width: 30%;
+}
+
+/* openingsuren */
+th, td {
+    width: 100px;
+}
+
+th, td.tijd {
+    text-align: center;
+}
+
+/* google map */
+#googleMap {
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 16px auto;
+    max-width: 100%;
+    height: auto;
+}
+
+/* media query */
+/* herschalen van vensters */
+@media screen and (max-width: 1200px) {
+    .nieuws {
+        width: 100%;
+    }
+
+    .artikel {
+        width: 97%;
+    }
+
+    .informatie {
+        width: 100%;
+    }
+}
+
+/* herschalen onderlinge artikels */
+@media screen and (max-width: 450px) {
+    .artikel {
+        width: 95%;
+    }
+}

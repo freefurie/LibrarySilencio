@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Silencio&colon; suggestie</title>
+    <link rel="stylesheet" href="../css/basis.css">
+    <link rel="stylesheet" href="../css/suggestie.css">
+</head>
+<body>
+<header>
+    <!-- Titel van bibliotheek + foto als achtergrond -->
+    <h1>Bibliotheek Silencio</h1>
+</header>
+<nav>
+    <!-- links naar alle pagina's binnen de site -->
+    <a href="../index.html">Hoofdpagina</a>
+    <a href="aanwinsten.html">Aanwinsten</a>
+    <a href="catalogus.html">Catalogus</a>
+    <a href="reservatie.html">Reservatie</a>
+    <a class="active" href="">Suggestie</a>
+    <a href="uitleningen.html">Uitleningen</a>
+</nav>
+<main>
+    <!-- overzicht van suggesties door een lid (titel/auteur/ISBN) met vermelding indien geaccepteerd of niet.
+        Bevat ook een formulier voor een nieuwe suggestie met volgende info&colon; (titel, soort(roman/informatief/strip), auteur, isbn & opmerking) -->
+    <form>
+        <h1>Nieuwe suggestie indienen</h1>
+        <label for="soort">Soort</label>
+        <select name="soort" id="soort">
+            <option value="Roman">Roman</option>
+            <option value="Informatief">Informatief</option>
+            <option value="Strip">Strip</option>
+        </select>
+        <input type="text" name="titel" placeholder="titel..">
+        <input type="text" name="auteur" placeholder="auteur..">
+        <input type="number" name="isbn" placeholder="ISBN..">
+        <textarea name="opmerking" placeholder="opmerking.."></textarea><br>
+        <input type="submit" value="Suggesteer">
+    </form>
+    <section>
+        <h1>Vorige suggesties</h1>
+        <article class="artikel">
+            <h3>De Bijbel voor ongelovigen</h3>
+            <p>Auteur&colon; Guus Kuijer</p>
+            <p>ISBN&colon; 9789025301231</p>
+            <p>De Bijbel is een fascinerend boek. Onze westerse cultuur is ondenkbaar zonder het heilige boek van de
+                joden en de christenen. Maar wie niet gelovig is, leest het niet. En dat is jammer, want het bevat een
+                aantal van de allermooiste verhalen uit de wereldliteratuur. Guus Kuijer vertelt ze na voor ongelovigen.
+                Te beginnen met het eerste boek, Genesis.</p>
+            <p>Aanvaard&colon; Ja</p>
+        </article>
+        <article class="artikel">
+            <h3>De nieuwe tsaar</h3>
+            <p>Auteur&colon; Steven Lee Myers</p>
+            <p>ISBN&colon; 9789035145139</p>
+            <p>De nieuwe tsaar leest als een spannende roman en is van groot belang voor iedereen die gefascineerd is
+                door het verschijnsel Poetin en tevens voor iedereen die geïnteresseerd is in de toekomst van de wereld
+                en de rol die het nieuwe brutale en agressieve Rusland daarin speelt.</p>
+            <p>Aanvaard&colon; Nee</p>
+        </article>
+        <article class="artikel">
+            <h3>Oorlogsenthousiasme</h3>
+            <p>Auteur&colon; Ewoud Kieft</p>
+            <p>ISBN&colon; 9789023484349</p>
+            <p>Oorlogsenthousiasme legt motieven in Europa’s moderne cultuur bloot die lang zijn doodgezwegen&colon; want wie
+                het oorlogsenthousiasme van 1914 begrijpt, begrijpt ook het ontstaan en de aantrekkingskracht van het
+                fascisme en nationaalsocialisme.</p>
+            <p>Aanvaard&colon; in verwerking</p>
+        </article>
+    </section>
+</main>
+<footer>
+    <!-- copyright notice en verwijzing naar facebook pagina van bibliotheek -->
+    <small>
+        &copy; Copyright 2018, William Van Bouwel<br>
+        volg Bibliotheek Silencio op facebook
+        <a href=""><img src="../images/facebookIcon.png" alt="Facebook icon" width="16" height="16"></a>
+    </small>
+</footer>
+</body>
+</html>

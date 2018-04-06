@@ -1,0 +1,21 @@
+.artikel {
+    width: 350px;
+    height: 350px;
+}
+
+/* voorkomt dat de form elementen naast elkaar gaan hangen*/
+form {
+    clear: both;
+}
+
+textarea {
+    height: 64px;
+    resize: none;
+}
+
+@media screen and (max-width: 450px) {
+    /* herschalen van artikels */
+    .artikel {
+        width: 300px;
+    }
+}

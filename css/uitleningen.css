@@ -1,0 +1,23 @@
+.artikel {
+    width: 350px;
+    height: 250px;
+}
+
+/* opmaak knop verlenging */
+button {
+    width: 250px;
+    border-bottom: solid 2px deepskyblue;
+}
+
+@media screen and (max-width: 450px) {
+    /* formaat artikels aanpassen */
+    .artikel {
+        width: 300px;
+        height: 300px;
+    }
+
+    /* knop verkleinen */
+    button {
+        width: 200px;
+    }
+}

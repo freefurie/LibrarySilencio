@@ -1,0 +1,162 @@
+/* -------------------- global -------------------- */
+* {
+    border-radius: 30px;
+}
+
+/* -------------------- body, header and footer --------------------*/
+/* background of body */
+body {
+    background: saddlebrown url("../images/background.jpg");
+    font-family: Arial, sans-serif;
+}
+
+/* header & footer of every page */
+body > header, body > footer {
+    border-bottom: solid 2px deepskyblue;
+    color: rgb(13, 34, 97);
+    margin: 10px;
+}
+
+body > header {
+    background: lightskyblue url("../images/avatarSilencioSmall.png") no-repeat 95%;
+    font-size: 32px;
+    font-style: italic;
+    height: 75px;
+    padding-left: 10px;
+}
+
+body > footer {
+    background: lightskyblue url("../images/cssVerified.gif") no-repeat 95%;
+    clear: both;
+    padding: 8px;
+    text-align: center;
+}
+
+/* -------------------- nav, buttons and links -------------------- */
+/* navigation and buttons */
+nav, input[type=submit], button {
+    background-color: lightskyblue;
+    border-bottom: solid 2px deepskyblue;
+    cursor: pointer;
+    margin: 10px;
+    overflow: hidden;
+}
+
+nav a {
+    border-radius: 0;
+    color: rgb(13, 34, 97);
+    display: block;
+    float: left;
+    font-style: oblique;
+    padding: 14px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+nav a:hover, button:hover, input[type=submit]:hover {
+    background-color: deepskyblue;
+}
+
+nav .active {
+    background-color: dodgerblue;
+    color: white;
+}
+
+input[type=submit], button {
+    width: 250px;
+}
+
+/* links */
+body a {
+    text-decoration: none;
+}
+
+/* -------------------- main -------------------- */
+/* h1 and form text alignment */
+main h1, form {
+    text-align: center;
+}
+
+/* main */
+main {
+    background-color: rgba(255, 204, 137, 0.90);
+    border-style: solid;
+    /*border-box --> padding + border in width*/
+    box-sizing: border-box;
+}
+
+/* -------------------- articles -------------------- */
+/* articles boeken */
+.artikel {
+    background: lightslategrey url("../images/crumpledPaper.jpg");
+    border-style: solid;
+    box-sizing: border-box;
+    float: left;
+    font-size: 15px;
+    margin: 10px;
+    overflow: hidden;
+    padding: 20px;
+}
+
+/* -------------------- images -------------------- */
+/* centering of images*/
+main img {
+    display: block;
+    margin: 0 auto;
+}
+
+/* -------------------- forms and buttons -------------------- */
+/* text inputs */
+input, textarea, select, button {;
+    border: none;
+    margin: 16px;
+    padding: 12px 20px;
+    width: 50%;
+}
+
+input:focus, textarea:focus, button {
+    outline-style: none;
+}
+
+/* -------------------- tables and lists -------------------- */
+/* lists */
+body ul {
+    list-style: none;
+}
+
+/* tables */
+table {
+    background: lightslategrey url("../images/crumpledPaper.jpg");
+    border-collapse: collapse;
+    border-radius: 0;
+    margin: 16px auto;
+}
+
+th, td {
+    border: solid;
+    padding: 5px;
+}
+
+/* -------------------- media queries -------------------- */
+@media screen and (max-width: 750px) {
+    /* nav onder elkaar tonen */
+    nav a {
+        display: block;
+        float: none;
+        padding: 14px;
+        text-align: center;
+    }
+
+    /* avatar vergroten voor opvulling en plaats voor titel onder elkaar*/
+    body > header {
+        background: lightskyblue url("../images/avatarSilencioBig.png") no-repeat 95%;
+        height: 150px;
+    }
+}
+
+@media screen and (max-width: 450px) {
+    /* font titel verkleinen */
+    header > h1 {
+        font-size: 48px;
+    }
+}

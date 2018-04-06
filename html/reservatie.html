@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Silencio&colon; reservatie</title>
+    <link rel="stylesheet" href="../css/basis.css">
+</head>
+<body>
+<header>
+    <!-- Titel van bibliotheek + foto als achtergrond -->
+    <h1>Bibliotheek Silencio</h1>
+</header>
+<nav>
+    <!-- links naar alle pagina's binnen de site -->
+    <a href="../index.html">Hoofdpagina</a>
+    <a href="aanwinsten.html">Aanwinsten</a>
+    <a href="catalogus.html">Catalogus</a>
+    <a class="active" href="">Reservatie</a>
+    <a href="suggestie.html">Suggestie</a>
+    <a href="uitleningen.html">Uitleningen</a>
+</nav>
+<main>
+    <!-- overzicht van de werken die je gereserveerd hebt, en mogelijkheid tot reserveren (ingeven titel/auteur/ISBN) -->
+    <h1>Gereserveerde werken</h1>
+    <table id="gereserveerd">
+        <tr>
+            <th>Titel</th>
+            <th>Auteur</th>
+            <th>ISBN</th>
+        </tr>
+        <tr>
+            <td>Harry Potter 2 &minus; Harry Potter en de Geheime Kamer</td>
+            <td>J.K. Rowling</td>
+            <td>9789076174129</td>
+        </tr>
+        <tr>
+            <td>Harry Potter 3 &minus; Harry Potter en de Gevangene van Azkaban</td>
+            <td>J.K. Rowling</td>
+            <td>9789076174143</td>
+        </tr>
+    </table>
+    <form id="reserveren">
+        <h1>Nieuwe werken reserveren</h1>
+        <input type="text" name="titel" placeholder="titel..">
+        <input type="text" name="auteur" placeholder="auteur..">
+        <input type="text" name="isbn" placeholder="ISBN..">
+        <br>
+        <input type="submit" value="Reserveer">
+    </form>
+</main>
+<footer>
+    <!-- copyright notice en verwijzing naar facebook pagina van bibliotheek -->
+    <small>
+        &copy; Copyright 2018, William Van Bouwel<br>
+        volg Bibliotheek Silencio op facebook
+        <a href=""><img src="../images/facebookIcon.png" alt="Facebook icon" width="16" height="16"></a>
+    </small>
+</footer>
+</body>
+</html>

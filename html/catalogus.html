@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="nl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Silencio&colon; catalogus</title>
+    <link rel="stylesheet" href="../css/basis.css">
+    <link rel="stylesheet" href="../css/catalogus.css">
+</head>
+<body>
+<header>
+    <!-- Titel van bibliotheek + foto als achtergrond -->
+    <h1>Bibliotheek Silencio</h1>
+</header>
+<nav>
+    <!-- links naar alle pagina's binnen de site -->
+    <a href="../index.html">Hoofdpagina</a>
+    <a href="aanwinsten.html">Aanwinsten</a>
+    <a class="active" href="">Catalogus</a>
+    <a href="reservatie.html">Reservatie</a>
+    <a href="suggestie.html">Suggestie</a>
+    <a href="uitleningen.html">Uitleningen</a>
+</nav>
+<main>
+    <!-- zoekvenster om in collectie te zoeken + keuzemenu (romans, informatief & strips)
+        elke pagina bevat minstens 10 boeken, en als gegevens is er: foto, titel, auteur en ISBN. (alfabetisch gesorteert) -->
+    <h1>Zoeken in catalogus</h1>
+    <form>
+        <input type="text" placeholder="titel.." name="titel">
+        <input type="text" placeholder="auteur.." name="auteur">
+        <input type="text" placeholder="ISBN.." name="isbn">
+        <button type="submit"><img src="../images/searchIcon.png" alt="Search Icon"></button>
+    </form>
+    <h1>Catalogus</h1>
+    <nav>
+        <a href="catalogus/romans.html">Romans</a>
+        <a href="catalogus/strips.html">Strips</a>
+        <a href="catalogus/informatief.html">Informatief</a>
+    </nav>
+</main>
+<footer>
+    <!-- copyright notice en verwijzing naar facebook pagina van bibliotheek -->
+    <small>
+        &copy; Copyright 2018, William Van Bouwel<br>
+        volg Bibliotheek Silencio op facebook
+        <a href=""><img src="../images/facebookIcon.png" alt="Facebook icon" width="16" height="16"></a>
+    </small>
+</footer>
+</body>
+</html>

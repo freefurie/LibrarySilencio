@@ -1,0 +1,28 @@
+.artikel {
+    width: 250px;
+    height: 400px;
+}
+
+/* zoekvelden catalogus */
+input[type=text] {
+    width: initial;
+}
+
+/* de zoekknop */
+button {
+    width: initial;
+    padding: 12px 12px;
+    border-bottom: solid 2px deepskyblue;
+}
+
+/* de nav voor de catalogus */
+main > nav a {
+    float: none;
+}
+
+@media screen and (max-width: 850px) {
+    /* de zoekvelden en knop onder elkaar weergeven */
+    input[type=text], button {
+        width: 50%;
+    }
+}
